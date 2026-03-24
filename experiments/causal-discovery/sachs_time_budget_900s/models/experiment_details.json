@@ -1,0 +1,358 @@
+{
+    "agents": [
+        "uctfull",
+        "ordering_uct",
+        "random_ordering",
+        "tabu_ordering"
+    ],
+    "experiment_conditions": {
+        "agent_subset": "both",
+        "btm_on_eval": {
+            "ordering_uct": true,
+            "uctfull": false
+        },
+        "e": null,
+        "experiment_params": {
+            "enforce_acyclic": true,
+            "num_runs": 50,
+            "penalise_cyclic": true,
+            "score_type": "BIC_different_var"
+        },
+        "gt": null,
+        "hyperparam_grids": {
+            "bic": {
+                "ordering_uct": {
+                    "adjust_C_p": [
+                        true
+                    ],
+                    "expansion_budget_modifier": [
+                        1000000
+                    ],
+                    "exploration_c": [
+                        0.025,
+                        0.05,
+                        0.075,
+                        0.1
+                    ],
+                    "max_indegree": [
+                        3
+                    ],
+                    "rollout_depth": [
+                        0
+                    ],
+                    "rollout_policy": [
+                        "random"
+                    ],
+                    "time_budget_s": [
+                        900.0
+                    ]
+                },
+                "random_ordering": {
+                    "expansion_budget_modifier": [
+                        1000000
+                    ],
+                    "max_indegree": [
+                        3
+                    ],
+                    "time_budget_s": [
+                        900.0
+                    ]
+                },
+                "tabu_ordering": {
+                    "expansion_budget_modifier": [
+                        1000000
+                    ],
+                    "max_indegree": [
+                        3
+                    ],
+                    "max_no_improve": [
+                        50
+                    ],
+                    "num_restarts": [
+                        20
+                    ],
+                    "tabu_size": [
+                        50
+                    ],
+                    "time_budget_s": [
+                        900.0
+                    ]
+                },
+                "uctfull": {
+                    "C_p": [
+                        0.025,
+                        0.05,
+                        0.075,
+                        0.1
+                    ],
+                    "adjust_C_p": [
+                        true
+                    ],
+                    "expansion_budget_modifier": [
+                        1000000
+                    ],
+                    "final_action_strategy": [
+                        "robust_child"
+                    ],
+                    "sim_policy": [
+                        "random"
+                    ],
+                    "sims_per_expansion": [
+                        1
+                    ],
+                    "time_budget_s": [
+                        900.0
+                    ],
+                    "transpositions_enabled": [
+                        false
+                    ]
+                }
+            }
+        },
+        "hyps_chunk_size": 1,
+        "instance_name": "sachs",
+        "n": 1000,
+        "num_seeds_skip": 0,
+        "p": null,
+        "perform_construction": true,
+        "perform_pruning": false,
+        "seed_offset": 0,
+        "seeds_chunk_size": 1,
+        "starting_graph_generation": "scratch",
+        "test_seeds": [
+            0,
+            42,
+            84,
+            126,
+            168,
+            210,
+            252,
+            294,
+            336,
+            378,
+            420,
+            462,
+            504,
+            546,
+            588,
+            630,
+            672,
+            714,
+            756,
+            798,
+            840,
+            882,
+            924,
+            966,
+            1008,
+            1050,
+            1092,
+            1134,
+            1176,
+            1218,
+            1260,
+            1302,
+            1344,
+            1386,
+            1428,
+            1470,
+            1512,
+            1554,
+            1596,
+            1638,
+            1680,
+            1722,
+            1764,
+            1806,
+            1848,
+            1890,
+            1932,
+            1974,
+            2016,
+            2058
+        ],
+        "validation_seeds": [
+            2100,
+            2142,
+            2184,
+            2226,
+            2268,
+            2310,
+            2352,
+            2394,
+            2436,
+            2478,
+            2520,
+            2562,
+            2604,
+            2646,
+            2688,
+            2730,
+            2772,
+            2814,
+            2856,
+            2898,
+            2940,
+            2982,
+            3024,
+            3066,
+            3108,
+            3150,
+            3192,
+            3234,
+            3276,
+            3318,
+            3360,
+            3402,
+            3444,
+            3486,
+            3528,
+            3570,
+            3612,
+            3654,
+            3696,
+            3738,
+            3780,
+            3822,
+            3864,
+            3906,
+            3948,
+            3990,
+            4032,
+            4074,
+            4116,
+            4158
+        ],
+        "what_vary": null
+    },
+    "experiment_id": "sachs_time_budget_900s",
+    "file_paths": {
+        "checkpoints_dir": "/experiment_data/sachs_time_budget_900s/models/checkpoints",
+        "datasets_storage_dir": "/experiment_data/datasets",
+        "eval_histories_dir": "/experiment_data/sachs_time_budget_900s/models/eval_histories",
+        "eval_results_dir": "/experiment_data/sachs_time_budget_900s/models/eval_results",
+        "eval_tasks_dir": "/experiment_data/sachs_time_budget_900s/models/tasks_eval",
+        "experiment_dir": "/experiment_data/sachs_time_budget_900s",
+        "experiment_id": "sachs_time_budget_900s",
+        "figures_dir": "/experiment_data/sachs_time_budget_900s/figures",
+        "hyperopt_results_dir": "/experiment_data/sachs_time_budget_900s/models/hyperopt_results",
+        "hyperopt_tasks_dir": "/experiment_data/sachs_time_budget_900s/models/tasks_hyperopt",
+        "logs_dir": "/experiment_data/logs",
+        "models_dir": "/experiment_data/sachs_time_budget_900s/models",
+        "parent_dir": "/experiment_data",
+        "rlbic_output_dir": "/experiment_data/sachs_time_budget_900s/rlbic_output",
+        "summaries_dir": "/experiment_data/sachs_time_budget_900s/models/summaries",
+        "test_histories_dir": "/experiment_data/sachs_time_budget_900s/models/test_histories",
+        "timings_dir": "/experiment_data/sachs_time_budget_900s/models/timings",
+        "trajectories_data_dir": "/experiment_data/sachs_time_budget_900s/trajectories_data"
+    },
+    "network_generators": [
+        "hardcoded"
+    ],
+    "objective_functions": [
+        "bic"
+    ],
+    "parameter_search_spaces": {
+        "bic": {
+            "ordering_uct": {
+                "0": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "exploration_c": 0.025,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": 900.0
+                },
+                "1": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "exploration_c": 0.05,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": 900.0
+                },
+                "2": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "exploration_c": 0.075,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": 900.0
+                },
+                "3": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": 900.0
+                }
+            },
+            "random_ordering": {
+                "0": {
+                    "expansion_budget_modifier": 1000000,
+                    "max_indegree": 3,
+                    "time_budget_s": 900.0
+                }
+            },
+            "tabu_ordering": {
+                "0": {
+                    "expansion_budget_modifier": 1000000,
+                    "max_indegree": 3,
+                    "max_no_improve": 50,
+                    "num_restarts": 20,
+                    "tabu_size": 50,
+                    "time_budget_s": 900.0
+                }
+            },
+            "uctfull": {
+                "0": {
+                    "C_p": 0.025,
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "final_action_strategy": "robust_child",
+                    "sim_policy": "random",
+                    "sims_per_expansion": 1,
+                    "time_budget_s": 900.0,
+                    "transpositions_enabled": false
+                },
+                "1": {
+                    "C_p": 0.05,
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "final_action_strategy": "robust_child",
+                    "sim_policy": "random",
+                    "sims_per_expansion": 1,
+                    "time_budget_s": 900.0,
+                    "transpositions_enabled": false
+                },
+                "2": {
+                    "C_p": 0.075,
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "final_action_strategy": "robust_child",
+                    "sim_policy": "random",
+                    "sims_per_expansion": 1,
+                    "time_budget_s": 900.0,
+                    "transpositions_enabled": false
+                },
+                "3": {
+                    "C_p": 0.1,
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 1000000,
+                    "final_action_strategy": "robust_child",
+                    "sim_policy": "random",
+                    "sims_per_expansion": 1,
+                    "time_budget_s": 900.0,
+                    "transpositions_enabled": false
+                }
+            }
+        }
+    },
+    "started_datetime": "2026-03-03-07-41-38",
+    "started_millis": 1772523698.146627
+}

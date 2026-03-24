@@ -1,0 +1,138 @@
+{
+    "experiment_parameters": {
+        "C_p": 0.025,
+        "adjust_C_p": true,
+        "algorithm": "ordering_uct",
+        "btm": true,
+        "coeff_threshold": 0.3,
+        "dataset_file": "datasets/sachs/data.npy",
+        "edge_budget": 17,
+        "expansion_budget_modifier": 5.0,
+        "exploration_c": 0.025,
+        "final_action_strategy": "robust_child",
+        "gt_file": "datasets/sachs/DAG.npy",
+        "include_cam_pruning": false,
+        "max_indegree": 3,
+        "normalize_data": true,
+        "ordering_rollout_depth": 0,
+        "ordering_rollout_policy": "random",
+        "output_directory": "development/ordering_nopruning_test",
+        "random_seed": 42,
+        "reg_type": "LR",
+        "rollout_depth": -1,
+        "score_type": "BIC_different_var",
+        "sim_policy": "random",
+        "sims_per_expansion": 1,
+        "transpositions_enabled": false
+    },
+    "results": {
+        "construct": {
+            "edges": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    5,
+                    7
+                ],
+                [
+                    6,
+                    5
+                ],
+                [
+                    6,
+                    7
+                ],
+                [
+                    9,
+                    8
+                ]
+            ],
+            "fdr": 1.0,
+            "fpr": 0.13157894736842105,
+            "pred_size": 5,
+            "reward": 6.191787486420514,
+            "shd": 17,
+            "tpr": 0.0
+        },
+        "ground_truth": {
+            "edges": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    1,
+                    5
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    2,
+                    4
+                ],
+                [
+                    4,
+                    3
+                ],
+                [
+                    5,
+                    6
+                ],
+                [
+                    7,
+                    0
+                ],
+                [
+                    7,
+                    1
+                ],
+                [
+                    7,
+                    5
+                ],
+                [
+                    7,
+                    6
+                ],
+                [
+                    7,
+                    9
+                ],
+                [
+                    7,
+                    10
+                ],
+                [
+                    8,
+                    0
+                ],
+                [
+                    8,
+                    1
+                ],
+                [
+                    8,
+                    7
+                ],
+                [
+                    8,
+                    9
+                ],
+                [
+                    8,
+                    10
+                ]
+            ],
+            "fdr": 0.0,
+            "fpr": 0.0,
+            "pred_size": 17,
+            "reward": 6.247550829630739,
+            "shd": 0,
+            "tpr": 1.0
+        }
+    }
+}

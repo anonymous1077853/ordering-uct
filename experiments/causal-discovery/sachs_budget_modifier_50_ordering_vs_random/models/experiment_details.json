@@ -1,0 +1,421 @@
+{
+    "agents": [
+        "ordering_uct",
+        "random_ordering"
+    ],
+    "experiment_conditions": {
+        "agent_subset": "ordering_vs_random",
+        "btm_on_eval": {
+            "ordering_uct": true,
+            "uctfull": false
+        },
+        "budget_modifier": 50,
+        "e": null,
+        "experiment_params": {
+            "enforce_acyclic": true,
+            "num_runs": 50,
+            "penalise_cyclic": true,
+            "score_type": "BIC_different_var"
+        },
+        "gt": null,
+        "hyperparam_grids": {
+            "bic": {
+                "ordering_uct": {
+                    "adjust_C_p": [
+                        true
+                    ],
+                    "expansion_budget_modifier": [
+                        50
+                    ],
+                    "exploration_c": [
+                        0.1,
+                        0.25,
+                        0.5,
+                        1.0
+                    ],
+                    "max_indegree": [
+                        3
+                    ],
+                    "rollout_depth": [
+                        0,
+                        2,
+                        4
+                    ],
+                    "rollout_policy": [
+                        "random",
+                        "greedy"
+                    ],
+                    "time_budget_s": [
+                        -1
+                    ]
+                }
+            }
+        },
+        "hyps_chunk_size": 1,
+        "instance_name": "sachs",
+        "n": 1000,
+        "num_seeds_skip": 0,
+        "p": null,
+        "perform_construction": true,
+        "perform_pruning": false,
+        "seed_offset": 0,
+        "seeds_chunk_size": 1,
+        "starting_graph_generation": "scratch",
+        "test_seeds": [
+            0,
+            42,
+            84,
+            126,
+            168,
+            210,
+            252,
+            294,
+            336,
+            378,
+            420,
+            462,
+            504,
+            546,
+            588,
+            630,
+            672,
+            714,
+            756,
+            798,
+            840,
+            882,
+            924,
+            966,
+            1008,
+            1050,
+            1092,
+            1134,
+            1176,
+            1218,
+            1260,
+            1302,
+            1344,
+            1386,
+            1428,
+            1470,
+            1512,
+            1554,
+            1596,
+            1638,
+            1680,
+            1722,
+            1764,
+            1806,
+            1848,
+            1890,
+            1932,
+            1974,
+            2016,
+            2058
+        ],
+        "validation_seeds": [
+            2100,
+            2142,
+            2184,
+            2226,
+            2268,
+            2310,
+            2352,
+            2394,
+            2436,
+            2478,
+            2520,
+            2562,
+            2604,
+            2646,
+            2688,
+            2730,
+            2772,
+            2814,
+            2856,
+            2898,
+            2940,
+            2982,
+            3024,
+            3066,
+            3108,
+            3150,
+            3192,
+            3234,
+            3276,
+            3318,
+            3360,
+            3402,
+            3444,
+            3486,
+            3528,
+            3570,
+            3612,
+            3654,
+            3696,
+            3738,
+            3780,
+            3822,
+            3864,
+            3906,
+            3948,
+            3990,
+            4032,
+            4074,
+            4116,
+            4158
+        ],
+        "what_vary": null
+    },
+    "experiment_id": "sachs_budget_modifier_50_ordering_vs_random",
+    "file_paths": {
+        "checkpoints_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/checkpoints",
+        "datasets_storage_dir": "/experiment_data/datasets",
+        "eval_histories_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/eval_histories",
+        "eval_results_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/eval_results",
+        "eval_tasks_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/tasks_eval",
+        "experiment_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random",
+        "experiment_id": "sachs_budget_modifier_50_ordering_vs_random",
+        "figures_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/figures",
+        "hyperopt_results_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/hyperopt_results",
+        "hyperopt_tasks_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/tasks_hyperopt",
+        "logs_dir": "/experiment_data/logs",
+        "models_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models",
+        "parent_dir": "/experiment_data",
+        "rlbic_output_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/rlbic_output",
+        "summaries_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/summaries",
+        "test_histories_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/test_histories",
+        "timings_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/models/timings",
+        "trajectories_data_dir": "/experiment_data/sachs_budget_modifier_50_ordering_vs_random/trajectories_data"
+    },
+    "network_generators": [
+        "hardcoded"
+    ],
+    "objective_functions": [
+        "bic"
+    ],
+    "parameter_search_spaces": {
+        "bic": {
+            "ordering_uct": {
+                "0": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "1": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "10": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "11": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "12": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "13": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "14": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "15": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "16": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "17": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.5,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "18": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "19": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "2": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "20": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "21": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "22": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "23": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 1.0,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "3": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "4": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "5": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.1,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                },
+                "6": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "7": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 2,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "8": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 4,
+                    "rollout_policy": "random",
+                    "time_budget_s": -1
+                },
+                "9": {
+                    "adjust_C_p": true,
+                    "expansion_budget_modifier": 50,
+                    "exploration_c": 0.25,
+                    "max_indegree": 3,
+                    "rollout_depth": 0,
+                    "rollout_policy": "greedy",
+                    "time_budget_s": -1
+                }
+            }
+        }
+    },
+    "started_datetime": "2026-03-04-16-25-11",
+    "started_millis": 1772641511.78382
+}

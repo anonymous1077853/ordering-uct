@@ -1,0 +1,104 @@
+{
+    "duration_construct_s": 300.059779,
+    "duration_prune_s": 0.0,
+    "hyperparams": {
+        "adjust_C_p": true,
+        "btm": false,
+        "coeff_threshold": 0.3,
+        "expansion_budget_modifier": 1000000,
+        "exploration_c": 0.1,
+        "max_indegree": 1,
+        "rollout_depth": 0,
+        "rollout_policy": "random",
+        "time_budget_s": 300.0
+    },
+    "hyperparams_id": 3,
+    "instance_metadata": {
+        "name": "synth10lr",
+        "reg_type": "LR",
+        "rlbic_num_edges": -1,
+        "root_path": "/experiment_data/datasets/synthetic/10nodeslr/gauss_same_noise/1",
+        "rvar_type": "continuous",
+        "transpose": true
+    },
+    "results": {
+        "construct": {
+            "edges": [
+                [
+                    3,
+                    1
+                ],
+                [
+                    6,
+                    9
+                ],
+                [
+                    7,
+                    5
+                ],
+                [
+                    7,
+                    8
+                ]
+            ],
+            "fdr": 0.25,
+            "fpr": 0.024390243902439025,
+            "pred_size": 4,
+            "reward": 2.956165447356658,
+            "shd": 1,
+            "tpr": 0.75
+        },
+        "ground_truth": {
+            "edges": [
+                [
+                    3,
+                    1
+                ],
+                [
+                    7,
+                    5
+                ],
+                [
+                    7,
+                    8
+                ],
+                [
+                    9,
+                    6
+                ]
+            ],
+            "fdr": 0.0,
+            "fpr": 0.0,
+            "pred_size": 4,
+            "reward": 2.9561654473566583,
+            "shd": 0,
+            "tpr": 1.0
+        },
+        "prune_cam": {
+            "edges": [
+                [
+                    3,
+                    1
+                ],
+                [
+                    6,
+                    9
+                ],
+                [
+                    7,
+                    5
+                ],
+                [
+                    7,
+                    8
+                ]
+            ],
+            "fdr": 0.25,
+            "fpr": 0.024390243902439025,
+            "pred_size": 4,
+            "reward": 2.956165447356658,
+            "shd": 1,
+            "tpr": 0.75
+        }
+    }
+}

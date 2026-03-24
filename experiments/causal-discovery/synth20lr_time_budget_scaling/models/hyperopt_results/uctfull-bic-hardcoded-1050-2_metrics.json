@@ -1,0 +1,256 @@
+{
+    "duration_construct_s": 303.032668,
+    "duration_prune_s": 0.0,
+    "hyperparams": {
+        "C_p": 0.075,
+        "adjust_C_p": true,
+        "btm": false,
+        "expansion_budget_modifier": 1000000,
+        "final_action_strategy": "robust_child",
+        "sim_policy": "random",
+        "sims_per_expansion": 1,
+        "time_budget_s": 300.0,
+        "transpositions_enabled": false
+    },
+    "hyperparams_id": 2,
+    "instance_metadata": {
+        "name": "synth20lr",
+        "reg_type": "LR",
+        "rlbic_num_edges": -1,
+        "root_path": "/experiment_data/datasets/synthetic/20nodeslr/gauss_same_noise/1",
+        "rvar_type": "continuous",
+        "transpose": true
+    },
+    "results": {
+        "construct": {
+            "edges": [
+                [
+                    0,
+                    10
+                ],
+                [
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    10
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    2,
+                    16
+                ],
+                [
+                    4,
+                    19
+                ],
+                [
+                    6,
+                    12
+                ],
+                [
+                    8,
+                    3
+                ],
+                [
+                    8,
+                    15
+                ],
+                [
+                    9,
+                    15
+                ],
+                [
+                    10,
+                    12
+                ],
+                [
+                    13,
+                    14
+                ],
+                [
+                    14,
+                    11
+                ],
+                [
+                    15,
+                    12
+                ],
+                [
+                    16,
+                    8
+                ],
+                [
+                    17,
+                    8
+                ],
+                [
+                    18,
+                    2
+                ]
+            ],
+            "fdr": 0.7058823529411765,
+            "fpr": 0.06936416184971098,
+            "pred_size": 17,
+            "reward": 14.248277151421787,
+            "shd": 17,
+            "tpr": 0.29411764705882354
+        },
+        "ground_truth": {
+            "edges": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    2,
+                    8
+                ],
+                [
+                    2,
+                    18
+                ],
+                [
+                    3,
+                    8
+                ],
+                [
+                    4,
+                    19
+                ],
+                [
+                    5,
+                    8
+                ],
+                [
+                    6,
+                    12
+                ],
+                [
+                    7,
+                    13
+                ],
+                [
+                    7,
+                    18
+                ],
+                [
+                    8,
+                    15
+                ],
+                [
+                    8,
+                    16
+                ],
+                [
+                    9,
+                    15
+                ],
+                [
+                    10,
+                    1
+                ],
+                [
+                    11,
+                    14
+                ],
+                [
+                    14,
+                    13
+                ],
+                [
+                    15,
+                    12
+                ],
+                [
+                    17,
+                    16
+                ]
+            ],
+            "fdr": 0.0,
+            "fpr": 0.0,
+            "pred_size": 17,
+            "reward": 16.20098719614284,
+            "shd": 0,
+            "tpr": 1.0
+        },
+        "prune_cam": {
+            "edges": [
+                [
+                    0,
+                    10
+                ],
+                [
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    10
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    2,
+                    16
+                ],
+                [
+                    4,
+                    19
+                ],
+                [
+                    6,
+                    12
+                ],
+                [
+                    8,
+                    3
+                ],
+                [
+                    8,
+                    15
+                ],
+                [
+                    9,
+                    15
+                ],
+                [
+                    13,
+                    14
+                ],
+                [
+                    14,
+                    11
+                ],
+                [
+                    15,
+                    12
+                ],
+                [
+                    16,
+                    8
+                ],
+                [
+                    17,
+                    8
+                ],
+                [
+                    18,
+                    2
+                ]
+            ],
+            "fdr": 0.6875,
+            "fpr": 0.06358381502890173,
+            "pred_size": 16,
+            "reward": 14.249978414186621,
+            "shd": 16,
+            "tpr": 0.29411764705882354
+        }
+    }
+}

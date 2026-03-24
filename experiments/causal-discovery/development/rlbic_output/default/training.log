@@ -1,0 +1,74 @@
+2026-02-09 23:31:07,371 INFO - helpers.log_helper - Completed configuring logger.
+2026-02-09 23:31:07,371 INFO - __main__ - Python version is 3.6.8
+2026-02-09 23:31:07,371 INFO - __main__ - Current commit of code: ___
+2026-02-09 23:31:07,373 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': True, 'use_bias_constant': False, 'bias_initial_value': -10.0, 'batch_size': 64, 'input_dimension': 128, 'max_length': 11, 'data_size': 853, 'read_data': True, 'data_path': '/experiment_data/datasets/sachs', 'normalize': True, 'transpose': False, 'score_type': 'BIC_different_var', 'reg_type': 'GPR', 'lambda_iter_num': 1000, 'lambda_flag_default': True, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 42, 'nb_epoch': 100, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'output_dir': '/experiment_data/development/rlbic_output/default', 'save_model_path': '/experiment_data/development/rlbic_output/default/model', 'summary_dir': '/experiment_data/development/rlbic_output/default/summary', 'plot_dir': '/experiment_data/development/rlbic_output/default/plot', 'graph_dir': '/experiment_data/development/rlbic_output/default/graph', 'scores_dir': '/experiment_data/development/rlbic_output/default/scores', 'final_graphs_dir': '/experiment_data/development/rlbic_output/default/final_graphs'}
+2026-02-09 23:31:09,699 INFO - __main__ - Original sl: -74.2363314947614, su: 0.012888219265800775, strue: -13.263849862535789
+2026-02-09 23:31:09,699 INFO - __main__ - Transfomed sl: -74.2363314947614, su: 0.012888219265800775, lambda2: 0.0001, true: 4.105934167864841
+2026-02-09 23:31:09,725 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:100: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.
+2026-02-09 23:31:09,758 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:20: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2026-02-09 23:31:09,759 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1257: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2026-02-09 23:31:09,797 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:39: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2026-02-09 23:31:09,809 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:64: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+2026-02-09 23:31:10,202 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/decoder/single_layer_decoder.py:72: Bernoulli.__init__ (from tensorflow.python.ops.distributions.bernoulli) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2026-02-09 23:31:10,202 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/bernoulli.py:97: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2026-02-09 23:31:10,327 INFO - tensorflow - Summary name average baseline is illegal; using average_baseline instead.
+2026-02-09 23:31:11,880 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/training/slot_creator.py:187: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2026-02-09 23:31:13,677 INFO - __main__ - Finished creating training dataset, actor model and reward class
+2026-02-09 23:31:13,716 INFO - __main__ - Starting session...
+2026-02-09 23:31:14,650 INFO - __main__ - Shape of actor.input: [ 64  11 128]
+2026-02-09 23:31:14,650 INFO - __main__ - Starting training.
+2026-02-09 23:31:25,493 INFO - __main__ - [iter 1] reward_batch: -5.0, max_reward: -4.999999999991326, max_reward_batch: -4.999999999991326
+2026-02-09 23:31:38,508 INFO - __main__ - Training COMPLETED !
+2026-02-20 01:15:25,927 INFO - helpers.log_helper - Completed configuring logger.
+2026-02-20 01:15:25,927 INFO - __main__ - Python version is 3.6.8
+2026-02-20 01:15:25,928 INFO - __main__ - Current commit of code: ___
+2026-02-20 01:15:25,929 INFO - __main__ - Configuration parameters: {'encoder_type': 'TransformerEncoder', 'hidden_dim': 64, 'num_heads': 16, 'num_stacks': 6, 'residual': False, 'decoder_type': 'SingleLayerDecoder', 'decoder_activation': 'tanh', 'decoder_hidden_dim': 16, 'use_bias': True, 'use_bias_constant': False, 'bias_initial_value': -10.0, 'batch_size': 64, 'input_dimension': 128, 'max_length': 11, 'data_size': 853, 'read_data': True, 'data_path': '/experiment_data/datasets/sachs', 'normalize': True, 'transpose': False, 'score_type': 'BIC_different_var', 'reg_type': 'GPR', 'lambda_iter_num': 1000, 'lambda_flag_default': True, 'score_bd_tight': True, 'lambda1_update': 1, 'lambda2_update': 10, 'score_lower': 0.0, 'score_upper': 0.0, 'lambda2_lower': -1, 'lambda2_upper': -1, 'seed': 42, 'nb_epoch': 100, 'lr1_start': 0.001, 'lr1_decay_step': 5000, 'lr1_decay_rate': 0.96, 'alpha': 0.99, 'init_baseline': -1.0, 'temperature': 3.0, 'C': 10.0, 'l1_graph_reg': 0.0, 'inference_mode': True, 'restore_model': False, 'save_to': '20/model', 'restore_from': '20/model', 'log_dir': 'summary/20/repo', 'verbose': False, 'output_dir': '/experiment_data/development/rlbic_output/default', 'save_model_path': '/experiment_data/development/rlbic_output/default/model', 'summary_dir': '/experiment_data/development/rlbic_output/default/summary', 'plot_dir': '/experiment_data/development/rlbic_output/default/plot', 'graph_dir': '/experiment_data/development/rlbic_output/default/graph', 'scores_dir': '/experiment_data/development/rlbic_output/default/scores', 'final_graphs_dir': '/experiment_data/development/rlbic_output/default/final_graphs'}
+2026-02-20 01:15:28,055 INFO - __main__ - Original sl: -74.2363314947614, su: 0.012888219265800775, strue: -13.263849862535789
+2026-02-20 01:15:28,056 INFO - __main__ - Transfomed sl: -74.2363314947614, su: 0.012888219265800775, lambda2: 0.0001, true: 4.105934167864841
+2026-02-20 01:15:28,093 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:100: batch_normalization (from tensorflow.python.layers.normalization) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.BatchNormalization instead.
+2026-02-20 01:15:28,116 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:20: dense (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dense instead.
+2026-02-20 01:15:28,117 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/ops/init_ops.py:1257: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2026-02-20 01:15:28,142 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:39: dropout (from tensorflow.python.layers.core) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use keras.layers.dropout instead.
+2026-02-20 01:15:28,155 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/encoder/transformer_encoder.py:64: conv1d (from tensorflow.python.layers.convolutional) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use `tf.keras.layers.Conv1D` instead.
+2026-02-20 01:15:28,534 WARNING - tensorflow - From /causal-discovery/rlbic-src/models/decoder/single_layer_decoder.py:72: Bernoulli.__init__ (from tensorflow.python.ops.distributions.bernoulli) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2026-02-20 01:15:28,535 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/ops/distributions/bernoulli.py:97: Distribution.__init__ (from tensorflow.python.ops.distributions.distribution) is deprecated and will be removed after 2019-01-01.
+Instructions for updating:
+The TensorFlow Distributions library has moved to TensorFlow Probability (https://github.com/tensorflow/probability). You should update all references to use `tfp.distributions` instead of `tf.distributions`.
+2026-02-20 01:15:28,661 INFO - tensorflow - Summary name average baseline is illegal; using average_baseline instead.
+2026-02-20 01:15:30,115 WARNING - tensorflow - From /opt/conda/envs/cd-env/lib/python3.6/site-packages/tensorflow/python/training/slot_creator.py:187: calling Zeros.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+2026-02-20 01:15:31,846 INFO - __main__ - Finished creating training dataset, actor model and reward class
+2026-02-20 01:15:31,883 INFO - __main__ - Starting session...
+2026-02-20 01:15:32,806 INFO - __main__ - Shape of actor.input: [ 64  11 128]
+2026-02-20 01:15:32,806 INFO - __main__ - Starting training.
+2026-02-20 01:15:43,499 INFO - __main__ - [iter 1] reward_batch: -5.0, max_reward: -4.999999999991326, max_reward_batch: -4.999999999991326
+2026-02-20 01:15:57,190 INFO - __main__ - Training COMPLETED !

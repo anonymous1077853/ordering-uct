@@ -1,0 +1,348 @@
+{
+    "experiment_parameters": {
+        "C_p": 0.025,
+        "adjust_C_p": true,
+        "algorithm": "ordering_uct",
+        "btm": true,
+        "coeff_threshold": 0.3,
+        "dataset_file": "datasets/synthetic/30nodeslr/gauss_same_noise/1/data.npy",
+        "edge_budget": 1,
+        "expansion_budget_modifier": 100.0,
+        "exploration_c": 1.4,
+        "final_action_strategy": "robust_child",
+        "gt_file": "datasets/synthetic/30nodeslr/gauss_same_noise/1/DAG.npy",
+        "include_cam_pruning": false,
+        "max_indegree": -1,
+        "normalize_data": true,
+        "ordering_rollout_depth": 0,
+        "ordering_rollout_policy": "random",
+        "output_directory": "calibration",
+        "random_seed": 42,
+        "reg_type": "LR",
+        "rollout_depth": -1,
+        "score_type": "BIC_different_var",
+        "sim_policy": "random",
+        "sims_per_expansion": 1,
+        "time_budget_s": -1,
+        "transpositions_enabled": false
+    },
+    "results": {
+        "construct": {
+            "edges": [
+                [
+                    0,
+                    1
+                ],
+                [
+                    3,
+                    6
+                ],
+                [
+                    3,
+                    9
+                ],
+                [
+                    3,
+                    10
+                ],
+                [
+                    3,
+                    19
+                ],
+                [
+                    3,
+                    21
+                ],
+                [
+                    3,
+                    24
+                ],
+                [
+                    3,
+                    25
+                ],
+                [
+                    3,
+                    29
+                ],
+                [
+                    4,
+                    6
+                ],
+                [
+                    4,
+                    7
+                ],
+                [
+                    4,
+                    11
+                ],
+                [
+                    4,
+                    24
+                ],
+                [
+                    6,
+                    5
+                ],
+                [
+                    9,
+                    12
+                ],
+                [
+                    9,
+                    16
+                ],
+                [
+                    9,
+                    21
+                ],
+                [
+                    9,
+                    27
+                ],
+                [
+                    10,
+                    5
+                ],
+                [
+                    10,
+                    15
+                ],
+                [
+                    10,
+                    19
+                ],
+                [
+                    11,
+                    23
+                ],
+                [
+                    14,
+                    5
+                ],
+                [
+                    15,
+                    0
+                ],
+                [
+                    15,
+                    8
+                ],
+                [
+                    15,
+                    12
+                ],
+                [
+                    18,
+                    12
+                ],
+                [
+                    18,
+                    27
+                ],
+                [
+                    19,
+                    21
+                ],
+                [
+                    21,
+                    20
+                ],
+                [
+                    22,
+                    2
+                ],
+                [
+                    22,
+                    4
+                ],
+                [
+                    22,
+                    18
+                ],
+                [
+                    22,
+                    25
+                ],
+                [
+                    22,
+                    27
+                ],
+                [
+                    23,
+                    1
+                ]
+            ],
+            "fdr": 0.8611111111111112,
+            "fpr": 0.07808564231738035,
+            "pred_size": 36,
+            "reward": 32.32487359999902,
+            "shd": 36,
+            "tpr": 0.13157894736842105
+        },
+        "ground_truth": {
+            "edges": [
+                [
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    23
+                ],
+                [
+                    2,
+                    22
+                ],
+                [
+                    3,
+                    9
+                ],
+                [
+                    3,
+                    19
+                ],
+                [
+                    3,
+                    21
+                ],
+                [
+                    4,
+                    22
+                ],
+                [
+                    5,
+                    6
+                ],
+                [
+                    5,
+                    10
+                ],
+                [
+                    5,
+                    14
+                ],
+                [
+                    6,
+                    3
+                ],
+                [
+                    6,
+                    4
+                ],
+                [
+                    6,
+                    13
+                ],
+                [
+                    7,
+                    4
+                ],
+                [
+                    8,
+                    15
+                ],
+                [
+                    10,
+                    15
+                ],
+                [
+                    11,
+                    4
+                ],
+                [
+                    12,
+                    0
+                ],
+                [
+                    12,
+                    9
+                ],
+                [
+                    12,
+                    15
+                ],
+                [
+                    12,
+                    18
+                ],
+                [
+                    15,
+                    0
+                ],
+                [
+                    16,
+                    9
+                ],
+                [
+                    18,
+                    22
+                ],
+                [
+                    19,
+                    10
+                ],
+                [
+                    20,
+                    21
+                ],
+                [
+                    23,
+                    11
+                ],
+                [
+                    24,
+                    3
+                ],
+                [
+                    24,
+                    4
+                ],
+                [
+                    24,
+                    10
+                ],
+                [
+                    24,
+                    22
+                ],
+                [
+                    25,
+                    3
+                ],
+                [
+                    25,
+                    22
+                ],
+                [
+                    27,
+                    9
+                ],
+                [
+                    27,
+                    18
+                ],
+                [
+                    27,
+                    22
+                ],
+                [
+                    29,
+                    3
+                ],
+                [
+                    29,
+                    17
+                ]
+            ],
+            "fdr": 0.0,
+            "fpr": 0.0,
+            "pred_size": 38,
+            "reward": 19.241452341743006,
+            "shd": 0,
+            "tpr": 1.0
+        }
+    },
+    "wall_clock_s": 1963.7632234096527
+}

@@ -1,0 +1,311 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 7 /Kids [6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 3501 >>
+stream
+BT /F2 22 Tf 1 0 0 1 54.00 710.00 Tm (Ordering-UCT for Continuous Causal) Tj ET
+BT /F2 22 Tf 1 0 0 1 54.00 682.00 Tm (Discovery) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 651.00 Tm (This repository is the trimmed, continuous-variable-only codebase built around the) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 636.00 Tm (causal discovery code from [_Tree search in DAG space with model-based) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 621.00 Tm (reinforcement learning for causal) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 606.00 Tm (discovery_]\(https://doi.org/10.1098/rspa.2024.0450\). The active code now focuses) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 591.00 Tm (on:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 562.00 Tm (- edge-based CD-UCT) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 545.00 Tm (- ordering-based CD-Ordering-UCT) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 528.00 Tm (- a random-ordering baseline) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 511.00 Tm (- the datasets, experiment outputs, and plotting scripts used to compare them) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 486.00 Tm (The main implementation lives in `code/causal-discovery`. The repository also ships) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 471.00 Tm (with datasets in `datasets/` and checked-in experiment artifacts in) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 456.00 Tm (`experiments/causal-discovery/`.) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 421.00 Tm (What Is In This Repo) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 392.00 Tm (The repository is no longer the full paper companion tree. The current codebase is) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 377.00 Tm (organized around the continuous-variable workflow only.) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 343.00 Tm (code/causal-discovery/) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 331.00 Tm (  cdrl/) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 319.00 Tm (    run_causal_discovery.py      # single dataset entry point) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 307.00 Tm (    setup_experiments.py         # create hyperopt/eval task files) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 295.00 Tm (    tasks.py                     # execute one serialized task) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 283.00 Tm (    agent/) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 271.00 Tm (      mcts/                      # edge-based UCT agents) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 259.00 Tm (      ordering/                  # ordering-based UCT agents) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 247.00 Tm (      baseline/                  # random-ordering baseline) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 235.00 Tm (  test/                          # smoke tests) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 223.00 Tm (  scripts/recipes/               # batch experiment helpers) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 211.00 Tm (  docker/                        # legacy container setup) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 199.00 Tm (  environment.yml                # legacy conda environment spec) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 181.00 Tm (datasets/                        # source datasets checked into the repo) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 169.00 Tm (experiments/causal-discovery/    # copied datasets, metrics, figures, task outputs) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 132.00 Tm (Supported Algorithms) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 103.00 Tm (`cdrl/run_causal_discovery.py` exposes three algorithms:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 74.00 Tm (- `uct`: edge-based Monte Carlo tree search over graph edits) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 57.00 Tm (- `ordering_uct`: ordering-based Monte Carlo tree search over variable orderings) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 1 of 7) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 2959 >>
+stream
+BT /F1 11 Tf 1 0 0 1 72.00 723.00 Tm (- `random_ordering`: random ordering baseline) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 698.00 Tm (It also supports:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 669.00 Tm (- `both`: run `uct` and `ordering_uct` together) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 652.00 Tm (- `all`: run `uct`, `ordering_uct`, and `random_ordering` together) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 627.00 Tm (In the task-based experiment pipeline, the full-depth edge-based agent is written) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 612.00 Tm (to disk as `uctfull` in metrics filenames. That is the same method that the) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 597.00 Tm (single-run CLI refers to as `uct`.) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 562.00 Tm (Datasets Wired Into The Code) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 533.00 Tm (The current instance generators recognize the following continuous-variable) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 518.00 Tm (datasets:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 489.00 Tm (- `datasets/sachs/`: Sachs benchmark, Gaussian process regression \(`GPR`\)) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 472.00 Tm (- `datasets/syntren/1` ... `datasets/syntren/10`: SynTReN graphs, `GPR`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 455.00 Tm (- `datasets/synthetic/*nodeslr/gauss_same_noise/1`: linear synthetic graphs,) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 440.00 Tm (  `LR`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 423.00 Tm (- `datasets/synthetic/50nodesqr/gauss_same_noise/1`: quadratic synthetic graph,) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 408.00 Tm (  `QR`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 391.00 Tm (- `datasets/gpgen/`: Gaussian-process-generated families used by the task) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 376.00 Tm (  pipeline) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 351.00 Tm (For containerized runs, the code expects these files under) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 336.00 Tm (`/experiment_data/datasets/...`. This repository already includes a ready-to-mount) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 321.00 Tm (experiment root at `experiments/causal-discovery/`, including a `datasets/` copy.) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 286.00 Tm (Setup) Tj ET
+BT /F2 13 Tf 1 0 0 1 54.00 255.00 Tm (Recommended workflow) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 228.00 Tm (The intended workflow is still Docker-first because the historical environment) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 213.00 Tm (depends on:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 184.00 Tm (- Python 3.6) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 167.00 Tm (- TensorFlow 1.13) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 150.00 Tm (- R packages used by CAM) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 133.00 Tm (- Graphviz / PyGraphviz) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 108.00 Tm (Set the two paths used by the scripts:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 74.00 Tm (export CD_SOURCE_DIR="$PWD/code/causal-discovery") Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 62.00 Tm (export CD_EXPERIMENT_DATA_DIR="$PWD/experiments/causal-discovery") Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 2 of 7) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 2679 >>
+stream
+BT /F1 11 Tf 1 0 0 1 54.00 723.00 Tm (On Apple Silicon, the original environment was built under `linux/amd64`, so you) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 708.00 Tm (may also need:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 674.00 Tm (export DOCKER_DEFAULT_PLATFORM=linux/amd64) Tj ET
+BT /F2 13 Tf 1 0 0 1 54.00 641.00 Tm (Build and start the manager container) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 609.00 Tm (bash "$CD_SOURCE_DIR/scripts/update_container.sh") Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 597.00 Tm (bash "$CD_SOURCE_DIR/scripts/manage_container.sh" up) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 566.00 Tm (Stop it with:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 532.00 Tm (bash "$CD_SOURCE_DIR/scripts/manage_container.sh" stop) Tj ET
+BT /F2 13 Tf 1 0 0 1 54.00 499.00 Tm (Important note about the legacy environment) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 472.00 Tm (The active causal discovery code no longer uses the old RL-BIC path, but parts of) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 457.00 Tm (the historical Docker scaffolding still reference it. Treat the Dockerfiles and) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 442.00 Tm (`environment.yml` as the original runtime baseline for this trimmed repository, not) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 427.00 Tm (as a freshly curated minimal environment.) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 392.00 Tm (Smoke Tests) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 363.00 Tm (If the container is running, the quickest validation path is:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 329.00 Tm (docker exec -it cd-manager /bin/bash -lc \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 317.00 Tm (  "source activate cd-env && cd /causal-discovery && pytest") Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 286.00 Tm (The tests cover:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 257.00 Tm (- graph state and cycle-handling logic) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 240.00 Tm (- ordering decoder behavior) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 223.00 Tm (- smoke runs for the UCT agent variants) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 192.00 Tm (Running One Causal Discovery Job) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 163.00 Tm (The simplest entry point is `code/causal-discovery/cdrl/run_causal_discovery.py`.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 134.00 Tm (It expects dataset and ground-truth paths relative to `/experiment_data`, plus:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 105.00 Tm (- `--edge_budget`: maximum number of construction steps; this is not inferred) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 90.00 Tm (  automatically) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 73.00 Tm (- `--reg_type`: one of `LR`, `QR`, `GPR`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 56.00 Tm (- `--score_type`: `BIC_different_var` \(default\) or `BIC`) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 3 of 7) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 3176 >>
+stream
+BT /F1 11 Tf 1 0 0 1 54.00 723.00 Tm (Example: compare all three algorithms on Sachs and let ordering-UCT define the time) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 708.00 Tm (budget used by the other two:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 674.00 Tm (docker exec -it cd-manager /bin/bash -lc ') Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 662.00 Tm (  source activate cd-env &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 650.00 Tm (  cd /causal-discovery &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 638.00 Tm (  python cdrl/run_causal_discovery.py \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 626.00 Tm (    --dataset_file datasets/sachs/data.npy \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 614.00 Tm (    --gt_file datasets/sachs/DAG.npy \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 602.00 Tm (    --output_directory development/sachs_all_algorithms \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 590.00 Tm (    --edge_budget 49 \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 578.00 Tm (    --reg_type GPR \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 566.00 Tm (    --algorithm all \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 554.00 Tm (    --include_cam_pruning \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 542.00 Tm (    --time_budget_s 0) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 530.00 Tm (') Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 499.00 Tm (Key flags:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 470.00 Tm (- `--algorithm uct|ordering_uct|random_ordering|both|all`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 453.00 Tm (- `--time_budget_s -1`: no wall-clock limit) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 436.00 Tm (- `--time_budget_s > 0`: fixed wall-clock budget per agent) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 419.00 Tm (- `--time_budget_s 0`: auto mode; only meaningful with `both` or `all`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 402.00 Tm (- `--normalize_data`: enabled by default) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 385.00 Tm (- `--include_cam_pruning`: run CAM-based edge pruning after construction) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 360.00 Tm (Outputs are written under `/experiment_data/<output_directory>/` on the container) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 345.00 Tm (side, which maps to `experiments/causal-discovery/<output_directory>/` in this) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 330.00 Tm (repository.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 301.00 Tm (Single-algorithm runs write:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 272.00 Tm (- `<dataset>_results.json`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 255.00 Tm (- `<dataset>_discovered_graph.pdf`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 238.00 Tm (- `<dataset>_discovered_graph_pruned.pdf` if CAM pruning is enabled) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 213.00 Tm (Multi-algorithm runs write:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 184.00 Tm (- `<dataset>_results_comparison.json`) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 153.00 Tm (Task-Based Experiment Pipeline) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 124.00 Tm (The repository also keeps the batch experiment pipeline used for Sachs and) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 109.00 Tm (synthetic scaling runs:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 80.00 Tm (- `cdrl/setup_experiments.py`: create serialized `hyperopt` or `eval` tasks) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 63.00 Tm (- `cdrl/tasks.py`: execute one task) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 4 of 7) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 3100 >>
+stream
+BT /F1 11 Tf 1 0 0 1 72.00 723.00 Tm (- `scripts/recipes/sachs_budget_experiment.sh`: helper for the Sachs comparison) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 708.00 Tm (  runs) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 691.00 Tm (- `scripts/recipes/time_budget_scaling_experiment.sh`: helper for the synthetic) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 676.00 Tm (  scaling runs) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 651.00 Tm (At a high level the flow is:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 622.00 Tm (1. Create tasks with `setup_experiments.py`.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 605.00 Tm (2. Execute `tasks.py` repeatedly for each generated task id.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 588.00 Tm (3. Read metrics from `models/hyperopt_results/` and `models/eval_results/`.) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 563.00 Tm (Example: create the Sachs ordering-vs-random hyperparameter tasks:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 529.00 Tm (docker exec -it cd-manager /bin/bash -lc ') Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 517.00 Tm (  source activate cd-env &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 505.00 Tm (  cd /causal-discovery &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 493.00 Tm (  python cdrl/setup_experiments.py \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 481.00 Tm (    --experiment_part hyperopt \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 469.00 Tm (    --which sachs \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 457.00 Tm (    --experiment_id sachs_budget_modifier_50_ordering_vs_random \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 445.00 Tm (    --instance_name sachs \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 433.00 Tm (    --agent_subset ordering_vs_random \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 421.00 Tm (    --budget_modifier 50) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 409.00 Tm (') Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 378.00 Tm (Then execute a task:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 344.00 Tm (docker exec -it cd-manager /bin/bash -lc ') Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 332.00 Tm (  source activate cd-env &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 320.00 Tm (  cd /causal-discovery &&) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 308.00 Tm (  python cdrl/tasks.py \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 296.00 Tm (    --experiment_id sachs_budget_modifier_50_ordering_vs_random \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 284.00 Tm (    --experiment_part hyperopt \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 272.00 Tm (    --task_id 1) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 260.00 Tm (') Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 229.00 Tm (Experiment directories follow the layout defined in `cdrl/io/file_paths.py`, with) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 214.00 Tm (subdirectories such as:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 185.00 Tm (- `models/tasks_hyperopt/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 168.00 Tm (- `models/tasks_eval/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 151.00 Tm (- `models/hyperopt_results/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 134.00 Tm (- `models/eval_results/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 117.00 Tm (- `figures/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 100.00 Tm (- `trajectories_data/`) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 69.00 Tm (Checked-In Results And Plotting) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 5 of 7) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 3042 >>
+stream
+BT /F1 11 Tf 1 0 0 1 54.00 723.00 Tm (This repository already includes result directories under) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 708.00 Tm (`experiments/causal-discovery/`, for example:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 679.00 Tm (- `sachs_budget_modifier_50_ordering_vs_random/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 662.00 Tm (- `sachs_time_budget_900s/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 645.00 Tm (- `synth10lr_time_budget_scaling/` through `synth50lr_time_budget_scaling/`) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 620.00 Tm (You can regenerate the comparison figures directly from those checked-in metrics) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 605.00 Tm (without rerunning the experiments.) Tj ET
+BT /F2 13 Tf 1 0 0 1 54.00 574.00 Tm (Synthetic scaling comparison) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 542.00 Tm (python experiments/causal-discovery/plot_comparison.py --result-type prune_cam) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 511.00 Tm (This scans the `synth*lr_time_budget_scaling/` directories under) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 496.00 Tm (`experiments/causal-discovery/` and writes:) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 467.00 Tm (- `experiments/causal-discovery/figures/comparison_construct.png`) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 450.00 Tm (- `experiments/causal-discovery/figures/comparison_prune_cam.png`) Tj ET
+BT /F2 13 Tf 1 0 0 1 54.00 423.00 Tm (Sachs comparison) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 396.00 Tm (Ordering-UCT vs random ordering:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 362.00 Tm (python experiments/causal-discovery/plot_sachs_budget_modifier_comparison.py \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 350.00 Tm (  --root experiments/causal-discovery \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 338.00 Tm (  --algorithm-comparison ordering_vs_random \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 326.00 Tm (  --result-type prune_cam) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 295.00 Tm (Ordering-UCT vs edge-based CD-UCT:) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 261.00 Tm (python experiments/causal-discovery/plot_sachs_budget_modifier_comparison.py \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 249.00 Tm (  --root experiments/causal-discovery \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 237.00 Tm (  --algorithm-comparison ordering_vs_uctfull \\) Tj ET
+BT /F3 9 Tf 1 0 0 1 78.00 225.00 Tm (  --result-type prune_cam) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 194.00 Tm (The script prints summary tables to the terminal and saves figures into the) Tj ET
+BT /F1 11 Tf 1 0 0 1 54.00 179.00 Tm (selected experiment directory's `figures/` folder.) Tj ET
+BT /F2 16 Tf 1 0 0 1 54.00 144.00 Tm (Practical Notes) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 115.00 Tm (- The code path that matters today is under `code/causal-discovery/cdrl/`.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 98.00 Tm (- `experiments/causal-discovery/` is both an artifact store and a convenient) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 83.00 Tm (  mount point for `/experiment_data`.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 66.00 Tm (- The repository includes historical environment files; expect some legacy) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 6 of 7) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 3 0 R /F2 4 0 R /F3 5 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 394 >>
+stream
+BT /F1 11 Tf 1 0 0 1 72.00 723.00 Tm (  pieces around the active ordering/CD-UCT implementation.) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 706.00 Tm (- The large experiment suites are still computationally expensive. The) Tj ET
+BT /F1 11 Tf 1 0 0 1 72.00 691.00 Tm (  checked-in metrics and figures are the fastest way to inspect outcomes.) Tj ET
+BT /F1 9 Tf 1 0 0 1 498.00 24.00 Tm (Page 7 of 7) Tj ET
+endstream
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000162 00000 n 
+0000000232 00000 n 
+0000000307 00000 n 
+0000000375 00000 n 
+0000000521 00000 n 
+0000004074 00000 n 
+0000004220 00000 n 
+0000007231 00000 n 
+0000007379 00000 n 
+0000010111 00000 n 
+0000010259 00000 n 
+0000013488 00000 n 
+0000013636 00000 n 
+0000016789 00000 n 
+0000016937 00000 n 
+0000020032 00000 n 
+0000020180 00000 n 
+trailer
+<< /Size 20 /Root 1 0 R >>
+startxref
+20626
+%%EOF
